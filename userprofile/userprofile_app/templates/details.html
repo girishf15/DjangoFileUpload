@@ -1,0 +1,13 @@
+{% extends "create.html" %}
+
+{% block replace %}
+
+    <p class="lead">It's an awesome profile picture</p>
+
+    <p>{{user_pr.display_picture.url}}</p>
+
+    <img src="{{ user_pr.display_picture.url }}" class="image_responsive" height="100px" width="100px">
+
+    <p>{{ user_pr.display_picture.url }}</p>
+
+{% endblock replace %}
